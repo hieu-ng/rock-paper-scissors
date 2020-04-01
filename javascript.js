@@ -5,14 +5,14 @@ let roundNumber = 0;
 
 // Function that creates the Computers choice at random
 function computerPlay() {
-  const result = Math.random();
+  let result = Math.random();
 
   if (result <= 0.33) {
-    return "Rock";
+    alert("Computer selected Rock");
   } else if (result <= 0.66) {
-    return "Paper";
+    alert("Computer selected Paper");
   } else {
-    return "Scissors";
+    alert("Computer selected Scissors");
   }
 }
 
