@@ -37,10 +37,10 @@ function playRound(playerSelection, computerSelection) {
     playerSelection !== "Paper" &&
     playerSelection !== "Scissors"
   ) {
-    console.log(
+    alert(
       "Looks like the player made an invalid choice, awaiting a new choice..."
     );
-    alert('Please enter a valid choice. ("Rock", "Paper", or "Scissors")');
+    prompt('Please enter a valid choice. ("Rock", "Paper", or "Scissors")');
     return playRound();
   } else if (playerSelection === computerSelection) {
     roundResult = "Draw!";
@@ -98,9 +98,9 @@ function game() {
     console.log(roundResult);
 
     // Final score check
-    if (i === 5) {
+    if (i === 3) {
       if (playerScore > computerScore) {
-        console.log(
+        alert(
           "Congratulations! You won " +
             playerScore +
             " to " +
@@ -109,7 +109,7 @@ function game() {
         );
         return;
       } else if (playerScore < computerScore) {
-        console.log(
+        alert(
           "Sorry, it looks like you lost " +
             playerScore +
             " to " +
@@ -118,7 +118,7 @@ function game() {
         );
         return;
       } else {
-        console.log(
+        alert(
           "Looks like it was a draw! " +
             playerScore +
             " to " +
